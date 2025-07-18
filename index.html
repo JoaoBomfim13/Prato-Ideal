@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <title>PratoIdeal</title>
+    <link rel="shortcut icon" type="imagex/png" href="./assets/1f372.ico">
+</head>
+<body>
+    <header class="main__header">
+        <div class="header">
+            <div id="logo">
+                <img src="/assets/1f372.png" alt="Icone Prato Ideal, panela de ensopado emoji" id="symbol">
+                <span>PRATOIDEAL</span>
+            </div>
+            <div id="custom__meal"> 
+                <span>Monte seu <span id="txt__span">Prato Ideal:</span></span>
+            </div>
+            <div class = "tray__info">
+                <div id="total__calories">
+                    <i class="fa-solid fa-fire">:</i>
+                    <span id="cal__counter">0</span>
+                </div>
+                <div id = "total__price">
+                    <i class="fa-solid fa-dollar-sign">:</i>
+                    <span id="price__counter">0.00</span>
+                </div>
+                <button onclick= trayCleaner() id="clean__tray">Limpar Bandeja</button>
+            </div>
+
+        </div>
+        </div>
+        
+        <div id="food__tray">
+        </div>  
+    </header>
+
+    <div class = 'main__container'>
+        <div class = pro__container>
+            <span id="pro">Proteínas</span>
+            <div id="pro__adds"></div>
+        </div>
+
+         <div class = carb__container>
+            <span id="carb">Carboidratos</span>
+            <div id="carb__adds"></div>
+        </div>
+
+        <div class = vegg__container>
+            <span id="vegg">Vegetais & Legumes</span>
+            <div id="vegg__adds"></div>
+        </div>
+
+    </div>
+
+    <script src="Script/script.js"></script>
+    <script src="https://kit.fontawesome.com/3edd9bb52b.js" crossorigin="anonymous"></script>
+</body>
+</html>
