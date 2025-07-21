@@ -1,0 +1,1 @@
+This project was created for research purposes only and has no nutritional implications or basis in any real data. Using only Javascript, Pratoideal calculates the calorie count and price of your meals based on your preferences.

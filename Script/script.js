@@ -6,8 +6,8 @@ let dishes = [
     {
         name: "Frango Grelhado",
         category: "protein",
-        calories: "165",
-        serving: "100g",
+        calories: 165,
+        serving: 100,
         price: 15.5,
         image: "./assets/proteins/chicken_breast_asset.jpg"
     },
@@ -15,8 +15,8 @@ let dishes = [
     {
         name: "Bife Grelhado",
         category: "protein",
-        calories: "275",
-        serving: "100g",
+        calories: 275,
+        serving: 100,
         price: 27.8,
         image: "./assets/proteins/grilled_steak_asset.jpg"
     },
@@ -24,8 +24,8 @@ let dishes = [
    {
         name: "Ovo Frito",
         category: "protein",
-        calories: "233",
-        serving: "100g",
+        calories: 233,
+        serving: 100,
         price: 1.8,
         image: "./assets/proteins/fried_egg_asset.jpg"
     },
@@ -33,8 +33,8 @@ let dishes = [
     {
         name: "Peixe Grelhado",
         category: "protein",
-        calories: "109",
-        serving: "100g",
+        calories: 109,
+        serving: 100,
         price: 25.8,
         image: "./assets/proteins/grilled_fish_asset.jpg"
     },
@@ -42,8 +42,8 @@ let dishes = [
     {
         name: "Costela de Porco Grelhada",
         category: "protein",
-        calories: "240",
-        serving: "100g",
+        calories: 240,
+        serving: 100,
         price: 19.8,
         image: "./assets/proteins/grilled_porkchop_asset.jpg"
     },
@@ -52,8 +52,8 @@ let dishes = [
     {
         name: "Pão",
         category: "carb",
-        calories: "30",
-        serving: "slice",
+        calories: 30,
+        serving: 50,
         price: 1.2,
         image: "./assets/carbs/bread_asset.png"
     },
@@ -61,8 +61,8 @@ let dishes = [
     {
         name: "Arroz Cozido",
         category: "carb",
-        calories: "130",
-        serving: "100g",
+        calories: 130,
+        serving: 100,
         price: 10.00,
         image: "./assets/carbs/rice_asset.png"
     },
@@ -70,8 +70,8 @@ let dishes = [
     {
         name: "Batata Frita",
         category: "carb",
-        calories: "312",
-        serving: "100g",
+        calories: 312,
+        serving: 100,
         price: 23.00,
         image: "./assets/carbs/french_fries_asset.png"
     },
@@ -79,8 +79,8 @@ let dishes = [
     {
         name: "Batata Doce",
         category: "carb",
-        calories: "77",
-        serving: "100g",
+        calories: 77,
+        serving: 100,
         price: 15.00,
         image: "./assets/carbs/sweet_potato_asset.png"
     },
@@ -88,8 +88,8 @@ let dishes = [
     {
         name: "Chocolate ao Leite",
         category: "carb",
-        calories: "53",
-        serving: "100g",
+        calories: 53,
+        serving: 10,
         price: 12.00,
         image: "./assets/carbs/chocolate_asset.png"
     },
@@ -98,8 +98,8 @@ let dishes = [
     {
         name: "Beterraba Cozida",
         category: "vegg",
-        calories: "44",
-        serving: "100g",
+        calories: 44,
+        serving: 100,
         price: 6.70,
         image: "./assets/veggies/beetroot_asset.png"
     },
@@ -107,8 +107,8 @@ let dishes = [
     {
         name: "Couve Flor Cozida",
         category: "vegg",
-        calories: "25",
-        serving: "100g",
+        calories: 25,
+        serving: 100,
         price: 8.70,
         image: "./assets/veggies/cauliflower_asset.png"
     },
@@ -116,8 +116,8 @@ let dishes = [
     {
         name: "Pepino",
         category: "vegg",
-        calories: "15",
-        serving: "100g",
+        calories: 15,
+        serving: 100 ,
         price: 5.40,
         image: "./assets/veggies/cucumber_asset.png"
     },
@@ -125,8 +125,8 @@ let dishes = [
     {
         name: "Alface",
         category: "vegg",
-        calories: "15",
-        serving: "100g",
+        calories: 15,
+        serving: 100,
         price: 3.40,
         image: "./assets/veggies/lettuce_asset.png"
     },
@@ -134,8 +134,8 @@ let dishes = [
     {
         name: "Tomate",
         category: "vegg",
-        calories: "18",
-        serving: "100g",
+        calories: 18,
+        serving: 100,
         price: 8.00,
         image: "./assets/veggies/tomato_asset.png"
     },
@@ -179,7 +179,7 @@ for (let i = 0; i < dishes.length; i++) {
         const id = document.createElement("div");
         id.className = "id";
             const calories = document.createElement("span");
-            calories.textContent = dishes[i].calories +"kcal/" + dishes[i].serving;
+            calories.textContent = dishes[i].calories +"kcal/" + dishes[i].serving + "g";
 
             const price = document.createElement("span");
             price.textContent = ("R$" + dishes[i].price)
@@ -215,7 +215,7 @@ for (let i = 0; i < dishes.length; i++) {
         const id = document.createElement("div");
         id.className = "id";
             const calories = document.createElement("span");
-            calories.textContent = dishes[i].calories +"kcal/" + dishes[i].serving;
+            calories.textContent = dishes[i].calories +"kcal/" + dishes[i].serving + "g";
 
             const price = document.createElement("span");
             price.textContent = ("R$" + dishes[i].price)
@@ -250,7 +250,7 @@ for (let i = 0; i < dishes.length; i++) {
         const id = document.createElement("div");
         id.className = "id";
             const calories = document.createElement("span");
-            calories.textContent = dishes[i].calories +"kcal/" + dishes[i].serving;
+            calories.textContent = dishes[i].calories +"kcal/" + dishes[i].serving + "g";
 
             const price = document.createElement("span");
             price.textContent = ("R$" + dishes[i].price)
@@ -273,6 +273,7 @@ for (let i = 0; i < dishes.length; i++) {
 function addTray(dishes) {
     tray.push(dishes);
     
+    let amt = prompt("Quantas gramas?");
   
 
 
@@ -287,28 +288,28 @@ function addTray(dishes) {
     ingredient.appendChild(ingredientImg);
 
     //calcula o total de calorias
-    caloriesCalc(dishes);
+    caloriesCalc(dishes, amt);
 
     //calcula o total de preço
-    priceCalc(dishes)
+    priceCalc(dishes, amt);
     
     //cria o botão de remover e chama a função com o click
     let removeButton = document.createElement("i");
     removeButton.className = "fa-solid fa-xmark";
-    removeButton.onclick = () => removeTray(ingredient, dishes,plate);
+    removeButton.onclick = () => removeTray(ingredient, dishes, plate, amt);
     ingredient.appendChild(removeButton);
 
-    let cleanTray = document.getElementById("clean__tray");
+    
 
 }
 
 
-function removeTray(ingredient, dishes, plate) {
+function removeTray(ingredient, dishes, plate, amt) {
 
     tray.splice(dishes);
     plate.removeChild(ingredient)
-    totalCalories = totalCalories - dishes.calories;
-    totalPrice = totalPrice - dishes.price;
+    totalCalories = totalCalories - ((dishes.calories / dishes.serving) * amt);
+    totalPrice = totalPrice - ((dishes.price/ dishes.serving) * amt);
     renderCal();
     renderPrice();
 
@@ -317,21 +318,21 @@ function removeTray(ingredient, dishes, plate) {
     
 }
 
-function caloriesCalc(dishes) {
-
-    //transforma em float e calcula valores 
-    dishes.calories = parseFloat(dishes.calories);
-    totalCalories = dishes.calories + totalCalories;
+function caloriesCalc(dishes, amt) {
+    dishCal = (dishes.calories / dishes.serving);
+    dishCal = (dishCal * amt);
+    totalCalories = (dishCal + totalCalories);
     renderCal();
 
     
 }
 
-function priceCalc(dishes) {
-
-    //transforma em float e calcula valores 
-    totalPrice = (dishes.price + totalPrice);
-    
+function priceCalc(dishes, amt) {
+    //calcula o valor proporcional a quantidade de cada prato 
+    dishPrice = (dishes.price / dishes.serving);
+    dishPrice = (dishPrice * amt);
+    totalPrice = (dishPrice + totalPrice);
+    console.log(totalPrice)
     renderPrice();
 }
 
